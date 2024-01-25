@@ -90,7 +90,7 @@ project_root/
   - **Authentication**: Use the `/register` endpoint to create a new user and `/login` to obtain a JWT token.
   - **Prediction**: Submit an ECG file using the `/predict` endpoint for heart rate and QRS complex predictions.
   - **Evaluation**: Access the `/evaluate` endpoint to receive model performance metrics.
-  - **Swagger Documentation**: The API documentation, including comprehensive details on endpoints, parameters, and expected responses, is readily accessible through the `/docs` endpoint of the API. This Swagger documentation provides an interactive interface for exploring the API's capabilities, facilitating both understanding and integration for developers.
+  - **Swagger Documentation**: The API documentation, including comprehensive details on endpoints, parameters, and expected responses, is readily accessible through the `http://localhost:8000/docs` endpoint of the API. This Swagger documentation provides an interactive interface for exploring the API's capabilities, facilitating both understanding and integration for developers.
 
 - **Streamlit Dashboard**:
   - Access the dashboard through your web browser at `http://localhost:8501`.
