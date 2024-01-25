@@ -1,4 +1,4 @@
-# ECG Model Inference System
+# ECG Model Inference System for the CPSC2019 challenge
 
 This project is an MLOps system designed for ECG (Electrocardiography) signal analysis, leveraging a machine learning model to predict heart rate and QRS complexes from ECG data. It consists of two main components: a FastAPI backend for model inference and a Streamlit frontend for interactive data visualization and analysis.
 
