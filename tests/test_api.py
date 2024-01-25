@@ -10,6 +10,11 @@ client = TestClient(app)
 
 @pytest.fixture(scope="module")
 def auth_token():
+    """
+    This fixture generates a unique username and password, registers and logs in the user,
+    and returns the authentication token for the session. This token is used in other tests
+    that require authentication.
+    """
     unique_username = f"testuser_{uuid.uuid4()}"  # Generates a unique username
     register_response = client.post(
         "/register", json={"username": unique_username, "password": "testpass"}
@@ -45,6 +50,11 @@ def test_index_endpoint():
 
 
 def test_register():
+    """
+    This function tests the registration endpoint of the FastAPI application.
+    It sends a POST request to the /register endpoint with a JSON payload containing a username and password.
+    It then checks the response status code and the response text.
+    """
     response = client.post(
         "register", json={"username": "testuser", "password": "testpass"}
     )
@@ -53,6 +63,11 @@ def test_register():
 
 
 def test_login():
+    """
+    This function tests the login endpoint of the FastAPI application.
+    It sends a POST request to the /login endpoint with a JSON payload containing a username and password.
+    It then checks the response status code and the presence of the token in the response.
+    """
     response = client.post(
         "login", json={"username": "testuser", "password": "testpass"}
     )
