@@ -18,7 +18,8 @@ This project is an MLOps system designed for ECG (Electrocardiography) signal an
 - [x] Dashboard: Develop a simple web-based dashboard to display the results of model
       inferences.
 - [x] Testing: Write tests to ensure the robustness and reliability of your deployed model.
-- [x] Authentication: Implement
+- [x] Authentication: Implement a method of authentication for accessing the deployed
+      model.
 
 ## System Overview
 
@@ -60,8 +61,8 @@ project_root/
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/badrlarhdir/mlops-techtest.git
+   cd mlops-techtest
    ```
 
 2. **Build and run the services using Docker Compose:**
