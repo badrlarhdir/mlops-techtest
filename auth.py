@@ -35,7 +35,7 @@ class AuthHandler:
         and returns the encoded token.
         """
         payload = {
-            "exp": datetime.utcnow() + timedelta(days=0, minutes=5),
+            "exp": datetime.utcnow() + timedelta(days=0, minutes=15),
             "iat": datetime.utcnow(),
             "sub": user_id,
         }
