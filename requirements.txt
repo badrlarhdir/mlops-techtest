@@ -1,0 +1,11 @@
+torch==1.11.0
+numpy
+pydantic
+scipy
+fastapi
+matplotlib
+uvicorn
+pytest
+httpx
+passlib
+PyJWT

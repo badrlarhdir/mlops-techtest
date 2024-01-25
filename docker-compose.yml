@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: api
+    build: .
+    environment:
+      SECRET_KEY: secret
+    ports:
+      - '8000:8000'
+    volumes:
+      - .:/cpsc2019
+
+  streamlit:
+    container_name: web_app
+    build:
+      context: .
+      dockerfile: ./streamlit/Dockerfile
+    ports:
+      - '8501:8501'
+    depends_on:
+      - app

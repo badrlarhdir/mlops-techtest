@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  test_app:
+    container_name: api_test
+    build: .
+    volumes:
+      - .:/cpsc2019
+    command: pytest /cpsc2019/tests/
