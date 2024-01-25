@@ -85,18 +85,6 @@ if selected_file != "None":
 
         st.pyplot(fig_ecg)
 
-        # # Convert QRS complex times from milliseconds to seconds and add the starting time
-        # qrs_seconds = [5.5 + qrs / 1000.0 for qrs in qrs_complexes]
-
-        # # Find the y-axis position for the dots: a bit below the maximum amplitude
-        # y_max = max(ecg_data)
-        # dot_y_position = y_max * 0.60  # 90% of the maximum to be slightly below the top
-
-        # # Plot the QRS complexes on the ECG signal
-        # ax_ecg.plot(
-        #     qrs_seconds, [dot_y_position] * len(qrs_seconds), "ro"
-        # )  # 'ro' for red dots
-
         # Display results
         st.subheader("Predictions from ECG")
         st.write("Heart Rate:", heart_rate)
